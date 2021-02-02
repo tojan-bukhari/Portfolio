@@ -1,0 +1,39 @@
+
+/* @media screen and (max-width: 786px) { */
+
+    /* .line{ */
+        /* width: 30px;
+        height: 3px;
+        background: rgb(226, 36, 36);
+        margin: 5px; */
+        /* right: 10%; */
+        /* left:50% */
+    /* } */
+    /* .nav{
+        position: relative;
+        cursor: pointer;
+        top:50%;
+        transform: translate(-5%, -50%);
+    }
+    .humberger{
+        position: absolute;
+    } */
+    /* .navLink{
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 80%;
+        flex-direction: column;
+    }
+} */
+/* .navLink{
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto
+} */
