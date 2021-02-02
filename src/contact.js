@@ -1,13 +1,4 @@
-import React from 'react';
-import face from './images/facebook.png';
-import insta from './images/instagram.png';
-import ino from './images/linkedin.png';
-import mail from './images/email.png';
-import tele from './images/tele.png';
-
-
 export default function contact() {
-    
     const handleclick=()=>{
         window.open('mailto:tojan333@gmail.com')
     }

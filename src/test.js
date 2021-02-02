@@ -7,7 +7,7 @@ import exam from './images/exam.png';
 import tech from './images/tech.png'
 import nature from './images/NATURE.png'
 import {Button} from 'react-bootstrap';
-
+import git from './images/git.png'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -15,12 +15,12 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     margin: 'auto',
-    maxWidth: 500,
+    width: '85%',
     backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.4), rgba(255,255,255,0.1))",
   },
   image: {
-    width: 128,
-    height: 128,
+    width: 300,
+    height: 200,
   },
   img: {
     margin: 'auto',
@@ -39,19 +39,15 @@ const useStyles = makeStyles((theme) => ({
       display: 'inline-block',
       fontSize: '15px',
       borderRadius: '8px',
+      marginLeft:'215px'
   },
- 
 }));
-
 export default function ComplexGrid() {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>  <br/><br/>
         <div className={classes.paper} style={{borderRadius: '1rem'}}>
-        <Typography style={{fontWeight: 'bold'}} className={classes.font} gutterBottom variant="subtitle1">
-                  My projects
-                </Typography>
+        <br/><h3 style={{textAlign:'left'}} >My projects</h3><br/>
       <div className={classes.paper} >
         <Grid container spacing={2}>
           <Grid item>
@@ -74,9 +70,9 @@ export default function ComplexGrid() {
                 </Typography>
               </Grid>
               <Grid item>
-                <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                <a href='https://github.com/tech-geeksC9/tech-kids'>Githup</a>
-                </Typography>
+                <div>
+                <a href='https://github.com/tojan-bukhari/teck-kids'><img style={{marginLeft:'5px'}} src={git} alt="Girl in a jacket" width="40" height="40"/></a>
+                </div>
               </Grid>
             </Grid>
             <Grid item>
@@ -85,7 +81,6 @@ export default function ComplexGrid() {
           </Grid>
         </Grid>
       </div><br/><br/>
-
       <div className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item>
@@ -116,7 +111,6 @@ export default function ComplexGrid() {
           </Grid>
         </Grid>
       </div><br/><br/>
-
       <div className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item>

@@ -6,11 +6,10 @@ import About from './about'
 import Head from './head'
 // import Nav from './nav'
 import Test from './test'
-
 function App() {
   return (
     <div style={{
-        backgroundImage: "linear-gradient(to left,  #4da6ff, 	 #d6f5f5)",
+        backgroundImage: "linear-gradient(to left, #65dfc9, #6cdbed)",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -23,7 +22,6 @@ function App() {
     <BrowserRouter>
       <div style={{backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.3))" ,  padding: '20px', display:'flex'}}><Head/></div>
         <Switch>
-    
       <div>
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/progects" component={Test} />
@@ -31,9 +29,7 @@ function App() {
       </div>
       </Switch>
       </BrowserRouter>
-      
     </div>
   );
 }
-
 export default App;
